@@ -1,0 +1,33 @@
+---
+browserSync: &browserSync
+  files:
+    - "public/**"
+    - "source/**"
+  watchOptions:
+    debounceDelay: 3000
+  server:
+    baseDir: "public"
+    routes:
+      "/config.js": "./config.js"
+      "/jspm_packages": "./jspm_packages/"
+      "/source": "./source/"
+    middleware: []
+  startPath: "/"
+  host: "127.0.0.1"
+  port: 3000
+  open: false
+  # notify: false
+  # online: false
+  # tunnel: false
+  # tunnel: "jspm-angular-demo"
+  # logLevel: "info"
+  # logPrefix: "jspm-angular-demo"
+  # logConnections: false
+  # logFileChanges: false
+
+# proxyURL: "http://your.endpoint.api/"
+# proxyOptions: &proxyOptions
+  # route: "/api"
+  # via: "nightire@localhost"
+  # cookieRewrite: "hostname"
+  # reserveHost: false
