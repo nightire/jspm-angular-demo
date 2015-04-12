@@ -10,7 +10,12 @@
 
         <script src="jspm_packages/system.js"></script>
         <script src="config.js"></script>
+        <script>
+            System.import("source/bootstrap").then(function(module) {
+                console.log(module)
+            })
+        </script>
     </head>
-    <body>
+    <body data-ng-app="app" data-ng-strict-di>
     </body>
 </html>
