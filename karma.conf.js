@@ -22,7 +22,7 @@ module.exports = function(config) {
     // files: [],
     jspm: {
         serveFiles: [
-            'source/**/*.js'
+            'source/**/*.{html,js}'
         ],
         loadFiles: [
             'test/**/*.js'
